@@ -1,0 +1,31 @@
+html,
+body {
+  background-color: #ccaae5;
+}
+.top {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+
+  top: calc(50% - 150px);
+  right: calc(50% - 150px);
+}
+
+.bottom {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+
+  top: calc(50% - 350px);
+  right: calc(50% - 350px);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
